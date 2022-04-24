@@ -2,7 +2,17 @@
     import Vue from 'vue';
     export default Vue.extend({
         name: 'Header',
-    })
+        methods: {
+            onContactUs() {
+                console.log(arguments);
+
+                const contactElement = document.querySelector('[data-js-selector="contact-section"]');
+
+                contactElement?.scrollIntoView({behavior: "smooth", });
+            }
+        }
+    });
+
 </script>
 
 <template>
@@ -17,7 +27,7 @@
                         using the best technology and methods available. We do everything from 
                         managing web hosting logo design.
                     </p>
-                    <button class="btn">Learn More</button>
+                    <button class="btn btn-lg contact-cta" v-on:click="onContactUs()">Contact Us</button>
                 </div>
             </div>
         </div>
@@ -26,6 +36,7 @@
 
 <style lang="scss" scoped>
     @import '../scss/invisibles.scss';
+
     $header-background: $theme-background;
     $header-color: white;
     $header-button-background: $theme-gradient;
@@ -36,10 +47,11 @@
         min-height: 600px;
         padding-top: 165px;
 
-        .btn {
+        .contact-cta {
             background: $header-button-background;
             color: $header-color;
             border: none;
+            margin-top: $spacer-md;
         }
     }
 </style>

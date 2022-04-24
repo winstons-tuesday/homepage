@@ -11,23 +11,7 @@
 // etc
 
 @import './theme.scss';
+$font-family-base:       $font-family-sans-serif !default;
 
-$theme-colors: (
-  "primary": $purple,
-  "danger": $danger
-);
-
-// background: map-get($map: $theme-colors, $key: 'primary');
-
-body {
-    font-family: $font-family-sans-serif;
-}
-
-code,
-pre {
-    font-family: $font-family-monospace;
-}
-
-// Default variable overrides (not working)
-$body-bg: rgb(50, 150, 77);
-$body-color: rgb(235, 98, 208);
+$font-family-sans-serif: $font-family-sans-serif !default;
+$font-family-monospace:  $font-family-monospace !default;

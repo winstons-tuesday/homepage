@@ -5,7 +5,7 @@ export default Vue.extend({
 })
 </script>
 <template>
-    <section class="container contact">
+    <section class="container contact" data-js-selector="contact-section">
         <div class="row d-flex justify-content-center">
             <h2 class="text-center contact-title">Contact</h2>
         </div>
