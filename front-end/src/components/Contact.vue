@@ -10,7 +10,7 @@ export default Vue.extend({
             <h2 class="text-center contact-title">Contact</h2>
         </div>
         <div class="row">
-            <div class="col d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
                 <div>
                     <h4 class="address-line">Winston's Tuesday, LLC</h4>
                     <h5 class="address-line">1117 Heather Heath Dr.</h5>
@@ -18,7 +18,7 @@ export default Vue.extend({
                     <a href="mailto:adam@winstonstuesday.com">adam@winstonstuesday.com</a>
                 </div>
             </div>
-            <div class="col map-container">
+            <div class="col-12 col-lg-6 map-container">
                 <GmapMap
                     :center="{lat: 42.607170, lng: -83.929604}"
                     :zoom="13"
@@ -38,6 +38,7 @@ export default Vue.extend({
 </template>
 
 <style lang="scss" scoped>
+    @import "../../node_modules/bootstrap/scss/bootstrap";
     @import '../scss/invisibles.scss';
 
     .contact {
@@ -55,5 +56,11 @@ export default Vue.extend({
     
     .map-container {
         height: 500px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        .map-container {
+            margin-top: $spacer-xl;
+        }
     }
 </style>

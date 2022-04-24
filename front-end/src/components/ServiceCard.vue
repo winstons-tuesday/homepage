@@ -9,7 +9,7 @@ export default Vue.extend({
 </script>
 
 <template>
-    <div class="col-3 wt-card">
+    <div class="col wt-card">
         <slot></slot>
         <h3 class="wt-card-title">{{title}}</h3>
         <p class="wt-card-body">{{blurb}}</p>
