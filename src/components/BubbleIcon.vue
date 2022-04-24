@@ -18,7 +18,7 @@
 
 <style lang="scss" scoped>
     @import "../scss/invisibles.scss";
-    
+
     $bi-primary: $theme-background;
     $bi-one: $theme-orange;
     $bi-two: $theme-purple;
@@ -41,8 +41,8 @@
     }
 
     .bubble-icon:hover {
-        color: $bi-one;
-        border-color: $bi-one;
+        color: white;
+        border: none;
     }
 
     .bubble-icon:before {
@@ -55,13 +55,13 @@
         left: 50%;
         right: 50%;
         opacity: 0;
+        background: $theme-gradient;
     }
 
     .bubble-icon:hover:before,
     .bubble-icon:active:before {
         content: "";
         transition: $bi-transition;
-        transition-delay: 200ms;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -70,10 +70,11 @@
         opacity: 1;
         border-radius: 3.5rem;
         box-shadow: 0 8px 29px #3f096640;
-        background: $theme-gradient;
     }
 
     .bubble-icon-svg {
+        position: relative;
         font-size: 2.5em;
+        z-index: 100;
     }
 </style>
