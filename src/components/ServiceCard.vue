@@ -17,6 +17,7 @@ export default Vue.extend({
 </template>
 
 <style lang="scss" scoped>
+
     .wt-card {
         display: flex;
         flex-direction: column;
@@ -25,8 +26,6 @@ export default Vue.extend({
         padding-left: 5px;
         padding-right: 5px;
         margin-bottom: 40px;
-
-        
     }
 
     .wt-card-title {

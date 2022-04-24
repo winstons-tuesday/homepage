@@ -1,0 +1,33 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+// Required
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Optional Bootstrap components here
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+// etc
+
+@import './theme.scss';
+
+$theme-colors: (
+  "primary": $purple,
+  "danger": $danger
+);
+
+// background: map-get($map: $theme-colors, $key: 'primary');
+
+body {
+    font-family: $font-family-sans-serif;
+}
+
+code,
+pre {
+    font-family: $font-family-monospace;
+}
+
+// Default variable overrides (not working)
+$body-bg: rgb(50, 150, 77);
+$body-color: rgb(235, 98, 208);

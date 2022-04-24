@@ -1,0 +1,17 @@
+$spacer-unit: 1em;
+$spacer-xxs:  0.25 * $spacer-unit;  // 4px
+$spacer-xs:   0.5 * $spacer-unit;   // 8px
+$spacer-sm:   0.75 * $spacer-unit;  // 12px
+$spacer-md:   1.25 * $spacer-unit;  // 20px
+$spacer-lg:   2 * $spacer-unit;     // 32px
+$spacer-xl:   3.25 * $spacer-unit;  // 52px
+$spacer-xxl:  5.25 * $spacer-unit;  // 84px
+
+$primary-color-dark:   #0288D1;
+$primary-color:        #03A9F4;
+$primary-color-light:  #B3E5FC;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #7C4DFF;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;

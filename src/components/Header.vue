@@ -12,12 +12,12 @@
                 <div class="col-8 text-center">
                     <h1 class="text-center">Winston's Tuesday</h1>
                     <p class="text-center">
-                        At Winston's Tuesday we have over 10 years of web design and development 
-                        experience. We create and maintain websites and browser based applications
+                        Winston's Tuesday is a website design and development company. With over 10 years of 
+                        experience creating websites, web based apps and mobile apps. We create and maintain websites and browser based applications
                         using the best technology and methods available. We do everything from 
-                        managing web hosting to designing a new logo.
+                        managing web hosting logo design.
                     </p>
-                    <button class="btn btn-primary">Learn More</button>
+                    <button class="btn">Learn More</button>
                 </div>
             </div>
         </div>
@@ -25,10 +25,21 @@
 </template>
 
 <style lang="scss" scoped>
+    @import '../scss/invisibles.scss';
+    $header-background: $theme-background;
+    $header-color: white;
+    $header-button-background: $theme-gradient;
+
     .header {
-        background: slategray;
-        color: white;
-        min-height: 700px;
+        background: $header-background;
+        color: $header-color;
+        min-height: 600px;
         padding-top: 165px;
+
+        .btn {
+            background: $header-button-background;
+            color: $header-color;
+            border: none;
+        }
     }
 </style>
