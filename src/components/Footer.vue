@@ -2,12 +2,17 @@
 import Vue from 'vue'
 export default Vue.extend({
     name: 'Footer',
+    data() {
+        return {
+            year: new Date().getFullYear(),
+        }
+    }
 })
 </script>
 <template>
     <footer class="container-fluid footer">
-        <div class="row">
-            <h2 class="text-center footer-title">Footer</h2>  
+        <div class="row d-flex justify-content-end">
+            <p class="text-center footer-legal">&copy; {{year}} Winston's Tuesday, LLC</p>  
         </div>
     </footer>
 </template>
@@ -15,16 +20,16 @@ export default Vue.extend({
 <style lang="scss" scoped>
     @import '../scss/invisibles.scss';
     $footer-background: $theme-background;
-    $footer-color: white;
+    $footer-color: $theme-text-dark;
 
     .footer {
-        height: 300px;
+        height: 100px;
         background: $footer-background;
         color: $footer-color;
         margin-top: $spacer-xxl;
     }
 
-    .footer-title {
+    .footer-legal {
         margin-top: $spacer-lg;
     }
 </style>
