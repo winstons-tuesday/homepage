@@ -23,9 +23,9 @@
                     <h1 class="text-center">Winston's Tuesday</h1>
                     <p class="text-center">
                         Winston's Tuesday is a website design and development company. With over 10 years of 
-                        experience creating websites, web based apps and mobile apps. We create and maintain websites and browser based applications
+                        experience creating websites, web based apps, and mobile apps. We create and maintain websites and browser based applications
                         using the best technology and methods available. We do everything from 
-                        managing web hosting logo design.
+                        managing web hosting to logo design.
                     </p>
                     <button class="btn btn-lg contact-cta" v-on:click="onContactUs()">Contact Us</button>
                 </div>
