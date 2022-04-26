@@ -8,7 +8,7 @@ export const SERVICES_CARDS_DATA: CardData[] = [
         title: 'Websites',
         blurb: `Create a new website or update an existing one using
         popular frameworks like Wordpress or just native HTML, CSS and
-        JavaScript. SINGLE SIGN ON.`,
+        JavaScript.`,
         icon: ['fas', 'desktop'],
     },
     {
@@ -26,7 +26,7 @@ export const SERVICES_CARDS_DATA: CardData[] = [
     },
     {
         title: 'Web Hosting',
-        blurb: `Hosting on popular cloud based solutions such as AWS, Microsoft Azure or Digitalocean`,
+        blurb: `Hosting on popular cloud based solutions such as AWS, Microsoft Azure or DigitalOcean`,
         icon: ['fas', 'upload'],
     }
 ]
